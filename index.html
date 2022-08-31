@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="icon" href="images/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2>Learn to code by watching others</h2>
+        <p>
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </header>
+
+      <main>
+        <article>
+          <p class="text">
+            <strong>Try it free 7 days</strong> then $20/mo. there after
+          </p>
+
+          <form>
+            <div class="box box-1">
+              <label for="firstName"></label>
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                placeholder="First Name"
+              />
+              <img class="error-icon icon-1" src="image/icon-error.svg" />
+            </div>
+            <p id="fNameErr" class="errMsg"></p>
+
+            <div class="box box-2">
+              <label for="lastName"></label>
+              <input
+                type="text"
+                name="lastName"
+                id="lastName"
+                placeholder="Last Name"
+              />
+              <img class="error-icon icon-2" src="image/icon-error.svg" />
+            </div>
+            <p id="lNameErr" class="errMsg"></p>
+
+            <div class="box box-3">
+              <label for="email"></label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email Address"
+              />
+              <img class="error-icon icon-3" src="image/icon-error.svg" />
+            </div>
+            <p id="emailErr" class="errMsg"></p>
+
+            <div class="box box-4">
+              <label for="password"></label>
+              <input
+                type="text"
+                name="password"
+                id="password"
+                placeholder="Password"
+              />
+              <img class="error-icon icon-4" src="image/icon-error.svg" />
+            </div>
+            <p id="passErr" class="errMsg"></p>
+
+            <button class="box" type="submit">CLAIM YOUR FREE TRAIL</button>
+
+            <p class="notice-text">
+              By clicking the button, you are agreeing to our
+              <a href="#">Terms and Services</a>
+            </p>
+          </form>
+        </article>
+
+        <section>
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="image/bg-intro-desktop.png"
+            />
+            <source srcset="image/bg-intro-mobile.png" />
+            <img
+              class="bg-image"
+              src="image/bg-intro-mobile.png"
+              alt="background image"
+            />
+          </picture>
+        </section>
+      </main>
+    </div>
+
+    <footer>
+      <p>
+        Challenge by <a href="#">Frontend Mentor</a> Code by
+        <a href="#">Chibuzor</a>
+      </p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
